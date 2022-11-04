@@ -1,0 +1,135 @@
+languageCode: en-us
+baseURL: "https://sajaldoes.github.io/"
+title: Sajal Das
+theme: "PaperMod"
+
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 40
+    - identifier: blog
+      name: Blogs
+      url: /blogs/
+      weight: 50
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  assets:
+    favicon: "/favicon.ico"
+
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  
+  # Home Page
+  profileMode:
+    enabled: ture
+    title: "Sajal Das"
+    subtitle: "Hello! \U0001F44B. This is the website of **Sajal Das** and
+    I am undergraduate student of Computer Science and Engineering from Daffodil International University. \U0001f1e7\U0001f1e9 <br>
+    Enthusiast of *Data Science*, *Artificial Inteligence*, *Machine Learning*, *Research*."
+    imageUrl: "images/dp.png"
+    imageWidth: 220
+    imageHeight: 220
+    imageTitle: "Sajal Das"
+    keywords: [Portfolio, Data Science, Python]
+
+    author: Sajal Das
+    # author: ["Me", "You"] # multiple authors
+    #images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hideSummary: false
+
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:contact.sajaldas@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/sajaldoes"
+    - name: "github"
+      url: "https://github.com/sajaldoes"
+    - name: twitter
+      url: "https://twitter.com/sajaldoes"
+    - name: "youtube"
+      url: "https://www.youtube.com/c/TechMateSajal"
+    - name: cv
+      url: "https://drive.google.com/"
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+    
+
+#   editPost:
+# #    URL: "https://github.com/chanin-www/content"
+# #    Text: "Suggest Changes" # edit text
+#     URL: ""
+#     Text: "" # edit text
+#     appendFilePath: true # to append file path to Edit link
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
