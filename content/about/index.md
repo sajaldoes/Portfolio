@@ -13,3 +13,10 @@ cover:
 showtoc: false
 draft: false
 ---
+
+Hello! 👋
+
+I am an undergraduate student of 
+**Computer Science and Engineering** from **Daffodil International University**.
+
+
