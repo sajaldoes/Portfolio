@@ -44,16 +44,16 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "static/favicon.ico"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "static/favicon.ico"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon16x16.ico"
+    favicon32x32: "/favicon.ico"
+    apple_touch_icon: "/favicon.ico"
+    safari_pinned_tab: "/favicon.ico"
 
   label:
     text: "Sajal Das"
-    # icon: /apple-touch-icon.png
-    # iconHeight: 35
+    # icon: /SD.png
+    # iconHeight: 24
 
   # profile-mode
   profileMode:
