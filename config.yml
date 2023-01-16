@@ -1,8 +1,114 @@
-languageCode: en-us
-baseURL: "https://sajaldoes.netlify.app/"
+baseURL: "https://sajaldoes.netlify.app"
 title: Sajal Das
-theme: "PaperMod"
+paginate: 5
+theme: PaperMod
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Sajal Das
+  description: "Sajal Das | Portfolio"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Sajal Das
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "static/favicon.ico"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "static/favicon.ico"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Sajal Das"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: ture
+    title: "Sajal Das"
+    subtitle: "I am an aspiring **researcher** on **Computer Vision, NLP, ML** from Bangladesh. \U0001f1e7\U0001f1e9 <br>
+    Enthusiast of *Data Science*, *Artificial Inteligence*, *Cyber Security*, *Computational Biology*."
+    imageUrl: "images/dp.png"
+    imageWidth: 220
+    imageHeight: 220
+    imageTitle: "Sajal Das"
+
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:contact.sajaldas@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/sajaldoes"
+    - name: "github"
+      url: "https://github.com/sajaldoes"
+    - name: twitter
+      url: "https://twitter.com/sajaldoes"
+    - name: "youtube"
+      url: "https://www.youtube.com/c/TechMateSajal"
+    - name: cv
+      url: "https://drive.google.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/sajaldoes/Portfolio/tree/master/content/"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 menu:
   main:
@@ -29,106 +135,15 @@ menu:
     - identifier: search
       name: Search
       url: /search
-      weight: 50
+      weight: 60
 
 
-
-minify:
-  disableXML: true
-  minifyOutput: true
-
-params:
-  # theme
-  showToc: true
-  TocOpen: false
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  hideMeta: false
-
-  assets:
-    favicon: "/favicon.ico"
-
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-
-  # Home Page
-  profileMode:
-    enabled: ture
-    title: "Sajal Das"
-    subtitle: "I am an aspiring **researcher** on **Computer Vision, NLP, ML** from Bangladesh. \U0001f1e7\U0001f1e9 <br>
-    Enthusiast of *Data Science*, *Artificial Inteligence*, *Cyber Security*, *Computational Biology*."
-    imageUrl: "images/dp.png"
-    imageWidth: 220
-    imageHeight: 220
-    imageTitle: "Sajal Das"
-    keywords: [Portfolio, Data Science, Python]
-
-    author: Sajal Das
-    # author: ["Me", "You"] # multiple authors
-    #images: ["<link or path of image for opengraph, twitter-cards>"]
-    DateFormat: "January 2, 2006"
-    defaultTheme: auto # dark, light
-    disableThemeToggle: false
-
-    ShowReadingTime: true
-    ShowShareButtons: true
-    ShowPostNavLinks: true
-    disableSpecial1stPost: false
-    disableScrollToTop: false
-    comments: false
-    hideSummary: false
-
-
-  # List View
-  hideDescriptionInList: false
-
-  # cover image for posts
-  cover:
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: false # hide on single page
-
-  socialIcons:
-    - name: "email"
-      url: "mailto:contact.sajaldas@gmail.com"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/sajaldoes"
-    - name: "github"
-      url: "https://github.com/sajaldoes"
-    - name: twitter
-      url: "https://twitter.com/sajaldoes"
-    - name: "youtube"
-      url: "https://www.youtube.com/c/TechMateSajal"
-    - name: cv
-      url: "https://drive.google.com/"
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
-
-# for search using Fuse.js
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
-    
-
-#   editPost:
-# #    URL: "https://github.com/chanin-www/content"
-# #    Text: "Suggest Changes" # edit text
-#     URL: ""
-#     Text: "" # edit text
-#     appendFilePath: true # to append file path to Edit link
-
-# allow HTML in MD
+pygmentsUseClasses: true
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
