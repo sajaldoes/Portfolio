@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
@@ -19,14 +19,14 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Sajal Das
   description: "Sajal Das | Portfolio"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Sajal Das, Portfolio]
   author: Sajal Das
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: False
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -78,26 +78,26 @@ params:
       url: "https://twitter.com/sajaldoes"
     - name: "youtube"
       url: "https://www.youtube.com/c/TechMateSajal"
-    - name: cv
+    - name: CV
       url: "https://drive.google.com/"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/sajaldoes/Portfolio/tree/master/content/"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/sajaldoes/Portfolio/tree/master/content/"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -128,14 +128,14 @@ menu:
       name: Publications
       url: /publications/
       weight: 40
-    - identifier: blog
-      name: Blogs
-      url: /blogs/
-      weight: 50
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 60
+    # - identifier: blog
+    #   name: Blogs
+    #   url: /blogs/
+    #   weight: 50
+    # - identifier: search
+    #   name: Search
+    #   url: /search
+    #   weight: 60
 
 
 pygmentsUseClasses: true

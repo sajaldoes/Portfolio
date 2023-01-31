@@ -3,13 +3,8 @@ title: "About"
 date: 2022-10-29T12:46:30+00:00
 slug: about
 category:
-summary:
+summary: 
 description: 
-cover:
-  image:
-  alt:
-  caption: 
-  relative: true
 showtoc: false
 draft: false
 ---
@@ -27,6 +22,22 @@ I have a research background from my undergraduation university life in NLP, Com
 Research Interests: **Artificial Intelligence, Computer Vision, Computer Security, Computational biology and bioinformatics, Human-Robot Interaction.**
 
 
-Education:
+## Education
+
+2019 - 2022
+: BSc in Computer Science and Engineering  
+[**Daffodil International University**](https://daffodilvarsity.edu.bd/)  
+CGPA: **3.99/4.00**
+
+2015 - 2017
+: HSC from Science; Dhaka Board  
+[**Government Science College**](https://www.gsctd.edu.bd/)  
+GPA: **4.67/5.00**
+
+2013 - 2015
+: SSC from Science; Dhaka Board  
+[**Government Science High School**](http://gshs.edu.bd/)  
+GPA: **5.00/5.00**
+
 
 
