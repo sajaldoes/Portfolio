@@ -13,3 +13,6 @@ category: projects
 
 ## Description
 TooSmart makes it easy to capture any thought or To-Do list for yourself, and share it with your friends and family. An android application made with Java programming and android studio.
+
+## Timeline
+Feb 2020 - April 2020

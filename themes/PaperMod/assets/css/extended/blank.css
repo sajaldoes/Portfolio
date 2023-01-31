@@ -42,3 +42,20 @@ a:hover::before {
   
     color: var(--secondary);
   }
+
+/* Publications page */
+/* #publications dt {
+  width: 5%;
+  font-weight: 400;
+}
+
+#publications dd {
+  width: 95%;
+  margin-inline-start: 0;
+  padding-inline-start: 10px;
+} */
+
+.post-content table th, .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+  min-width: 45px;
+  font-size: medium;
+}

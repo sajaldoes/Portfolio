@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2022-10-29T12:46:30+00:00
+date: 2023-01-29T12:46:30+00:00
 slug: about
 category:
 summary: 
