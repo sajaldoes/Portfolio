@@ -20,7 +20,7 @@ params:
   title: Sajal Das
   description: "Sajal Das | Portfolio"
   keywords: [Sajal Das, Portfolio]
-  author: Sajal Das
+  # author: Sajal Das
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false

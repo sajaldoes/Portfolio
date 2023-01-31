@@ -19,7 +19,7 @@ I have a research background from my undergraduation university life in NLP, Com
 - [**ResearchGate**](https://www.researchgate.net/profile/Sajal-Das-7)
 - [**GitHub**](https://github.com/sajaldoes/)
 
-Research Interests: **Artificial Intelligence, Computer Vision, Computer Security, Computational biology and bioinformatics, Human-Robot Interaction.**
+Research Interests: Artificial Intelligence, Computer Vision, Computer Security, Computational biology and bioinformatics, Human-Robot Interaction.
 
 
 ## Education
