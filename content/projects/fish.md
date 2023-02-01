@@ -1,7 +1,7 @@
 ---
 title: "Multi-class Fish Classification"
 description: 
-dateString: Feb 2022 - July 2022
+dateString: July 2022 - Oct 2022
 draft: false
 tags: ["CNN", "DL", "OpenCV", "Python", "Pandas"]
 showtoc: false
