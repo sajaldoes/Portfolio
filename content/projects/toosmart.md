@@ -1,7 +1,7 @@
 ---
 title: "TooSmart - A Note taking app"
 description: 
-dateString: Feb 2020 - April 2020   
+dateString: Jan 2020 - April 2020   
 draft: false
 tags: ["Android", "Java", "App", "Web", "Firebase"]
 showtoc: false
