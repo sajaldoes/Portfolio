@@ -58,4 +58,6 @@ a:hover::before {
 .post-content table th, .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
   min-width: 45px;
   font-size: medium;
+  border: none!important;
 }
+
