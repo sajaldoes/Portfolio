@@ -60,11 +60,14 @@ params:
     enabled: ture
     title: "Sajal Das"
     subtitle: "I am an aspiring **researcher** on **Computer Vision, NLP, ML** from Bangladesh. \U0001f1e7\U0001f1e9 <br>
-    Enthusiast of *Data Science*, *Artificial Inteligence*, *Cyber Security*, *Computational Biology*."
+    Enthusiast of *Data Science*, *Artificial Inteligence*, *Machine Learning*."
     imageUrl: "images/dp.png"
     imageWidth: 220
     imageHeight: 220
     imageTitle: "Sajal Das"
+    buttons:
+     - name: Resume
+       url: https://drive.google.com/file/d/1udh0NmBGDWIgd4DIcoDKhlyfq8eMIGl4/view?usp=sharing
 
 
   socialIcons:
@@ -78,8 +81,6 @@ params:
       url: "https://twitter.com/sajaldoes"
     - name: "youtube"
       url: "https://www.youtube.com/c/TechMateSajal"
-    - name: CV
-      url: "https://drive.google.com/"
 
   # analytics:
   #   google:
