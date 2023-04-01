@@ -1,12 +1,12 @@
 ---
 title: "London Bike Rides - Moving Average and Heatmap"
 description: 
-dateString: March 2023   
+dateString: March 2023 - March 2023
 draft: false
 tags: ["Python", "Pandas", "Tableau", "Excel", "Kaggle"]
 showtoc: false
-weight: 307
-cover: https://raw.githubusercontent.com/sajaldoes/data_viz_moving_avg_heatmap/master/viz.png
+weight: 300
+cover: 
 category: projects
 --- 
 🔗 [**Visualize in Tableau**](https://public.tableau.com/views/LondonBikeRides-MovingAverageandHeatmap_16803344810800/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) &nbsp; 👩‍💻 [**Source Code**](https://github.com/sajaldoes/data_viz_moving_avg_heatmap) 
@@ -31,12 +31,8 @@ Data manipulation process completed with Pandas.
 ## Data Analytics
 The data anlytics and visualization completed using Tableau. The moving average rides visualizatioon, wind speed and temperature heatmap is presented in the visualization where weather and hour of time visualized in tooltip.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/sajaldoes/data_viz_moving_avg_heatmap/master/viz.png">
-<b>Full visualization<b>
-</p>
+**Full Visualization**
+![Full Visualization](/projects/data_viz_london/viz.png)
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/sajaldoes/data_viz_moving_avg_heatmap/master/tooltip.png"><br>
-<b>Tooltip visualization<b>
-</p>
+**Tooltip Visualization**
+![Tooltip Visualization](/projects/data_viz_london/tooltip.png)
