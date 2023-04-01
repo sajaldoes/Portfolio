@@ -120,14 +120,18 @@ menu:
       name: About
       url: /about/
       weight: 20
+    - identifier: experiences
+      name: Experiences
+      url: /experiences/
+      weight: 30
     - identifier: projects
       name: Projects
       url: /projects/
-      weight: 30
+      weight: 40
     - identifier: publications
       name: Publications
       url: /publications/
-      weight: 40
+      weight: 50
     # - identifier: blog
     #   name: Blogs
     #   url: /blogs/

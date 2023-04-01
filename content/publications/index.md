@@ -8,6 +8,7 @@ description:
 showtoc: false
 draft: false
 ---
+Research Interests: Artificial Intelligence, Computer Vision, Computer Security, Computational biology and bioinformatics, Human-Robot Interaction.
 
 |     |  	|
 | --- | --- |
