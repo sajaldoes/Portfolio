@@ -10,19 +10,19 @@ draft: false
 ---
 
 
-Junior Data Analyst  [Nov 2020 - Oct 2022]  
-[**Apon Bazar**](https://www.apon-wellbeing.com/)   
+**Junior Data Analyst**  
+[**Apon Bazar**](https://www.apon-wellbeing.com/)   [Nov 2020 - Oct 2022]  
 - Developed sales, supply chain, and utilization data dashboards. These lead the company to target 27 million sales and product utilization at a 1.3 to 1.6 rate.
 
 
-Instructor  [Nov 2020 - Oct 2022]  
-[**Human Resource Development Institute**](https://hrdi.ac/)   
+**Instructor**   
+[**Human Resource Development Institute**](https://hrdi.ac/)   [Nov 2020 - Oct 2022] 
 - Developed and delivered the Essential ICT Skills course, covering fundamental
 computer skills for business and personal use. Also, instructed the Adobe
 Premiere Pro CC Video Editing for Beginners course.
 
-Asst. Manager, Events & Branding  [Oct 2021 - Sep 2022]  
-[**Bangladesh Robotics Foundation**](https://bdrf.org.bd/)   
+**Asst. Manager, Events & Branding**   
+[**Bangladesh Robotics Foundation**](https://bdrf.org.bd/)   [Oct 2021 - Sep 2022] 
 - Optimized corporate event management using office tools and Python
 automation, leading to enhanced brand recognition in robotics.
 
