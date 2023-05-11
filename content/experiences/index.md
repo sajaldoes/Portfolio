@@ -36,6 +36,7 @@ automation, leading to enhanced brand recognition in robotics.
 **Framework & Library:**
 - Tensorflow • OpenCV • Scikit-learn
 • Pandas • Tableau • Matplotlib
+• Power BI • Excel
 • Selenium  • Streamlit
 
 **Tools:**
