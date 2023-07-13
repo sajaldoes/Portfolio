@@ -10,9 +10,14 @@ draft: false
 ---
 
 
-**Junior Data Analyst**,  [**Apon Bazar**](https://www.apon-wellbeing.com/)   
+**Junior Data Analyst**,  [**Apon Bazaar**](https://www.aponbazaar.co/)
 [May 2023 - Present]  
-- Developed sales, supply chain, and utilization data dashboards. These lead the company to target 27 million sales and product utilization at a 1.3 to 1.6 rate.
+-  Increased profit from offer promotions by 120% through enhanced data-driven
+approach using tracking and visualization tools.
+- Achieved 130% growth in targeted sales and product utilization (1.3 to 1.6
+ratio) by designing and deploying data dashboards for sales, supply chain, and
+utilization analysis.
+
 
 
 **Instructor**,   [**Human Resource Development Institute**](https://hrdi.ac/)   
