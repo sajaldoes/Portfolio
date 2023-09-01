@@ -15,7 +15,7 @@ I am a **Data Science** enthusiast with a Computer Science and Engineering degre
 
 ## Education
 
-2019 - 2022
+2019 - 2023
 : BSc in Computer Science and Engineering  
 [**Daffodil International University**](https://daffodilvarsity.edu.bd/)  
 CGPA: **3.99/4.00**

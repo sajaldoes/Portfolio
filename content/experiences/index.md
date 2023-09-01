@@ -12,22 +12,21 @@ draft: false
 
 **Junior Data Analyst**,  [**Apon Bazaar**](https://www.aponbazaar.co/)
 [May 2023 - Present]  
--  Increased profit from offer promotions by 120% through enhanced data-driven
-approach using tracking and visualization tools.
-- Achieved 130% growth in targeted sales and product utilization (1.3 to 1.6
-ratio) by designing and deploying data dashboards for sales, supply chain, and
-utilization analysis.
-
+-  Leveraged cutting-edge BI tools to drive data-driven offer promotions, delivering a
+remarkable 120% increase in profits.
+- Employed state-of-the-art machine learning techniques for sales forecasting, achieving
+precise sales predictions. This strategic analysis played a pivotal role in unlocking 13.6
+million BDT in product utilization.
 
 
 **Instructor**,   [**Human Resource Development Institute**](https://hrdi.ac/)   
-[Nov 2020 - Oct 2022] 
+[Sep 2020 - Jun 2022] 
 - Developed and delivered the Essential ICT Skills course, covering fundamental
 computer skills for business and personal use. Also, instructed the Adobe
 Premiere Pro CC Video Editing for Beginners course.
 
 **Asst. Manager, Events & Branding**,   [**Bangladesh Robotics Foundation**](https://bdrf.org.bd/)   
-[Oct 2021 - Sep 2022] 
+[Oct 2021 - Apr 2022] 
 - Optimized corporate event management using office tools and Python
 automation, leading to enhanced brand recognition in robotics.
 
