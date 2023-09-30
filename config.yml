@@ -67,9 +67,9 @@ params:
     imageTitle: "Sajal Das"
     buttons:
      - name: Academic CV
-       url: "/Academic_CV_Sajal_Das.csv"
+       url: "/Academic_CV_Sajal_Das.pdf"
      - name: Resume
-       url: "/Resume_Sajal_Das.csv"
+       url: "/Resume_Sajal_Das.pdf"
 
 
   socialIcons:
