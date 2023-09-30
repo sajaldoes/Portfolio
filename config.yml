@@ -66,8 +66,10 @@ params:
     imageHeight: 220
     imageTitle: "Sajal Das"
     buttons:
+     - name: Academic CV
+       url: "/Academic_CV_Sajal_Das.csv"
      - name: Resume
-       url: https://drive.google.com/file/d/1zvFHSj0jsxipLa9XTbTnAK5cS9B4o_v0/view?usp=sharing
+       url: "/Resume_Sajal_Das.csv"
 
 
   socialIcons:
