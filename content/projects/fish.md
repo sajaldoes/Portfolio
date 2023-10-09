@@ -5,7 +5,7 @@ dateString: July 2022 - Oct 2022
 draft: false
 tags: ["CNN", "DL", "OpenCV", "Python", "Pandas"]
 showtoc: false
-weight: 303
+weight: 393
 cover:
 category: projects
 --- 

@@ -1,11 +1,11 @@
 ---
 title: "Stock Market Real Time Data Streaming using Kafka"
 description: 
-dateString: March 2023 - March 2023
+dateString: September 2023 - September 2023
 draft: false
 tags: ["Kafka", "Amazon Web Services (AWS)", "Python"]
 showtoc: false
-weight: 300
+weight: 390
 cover: 
 category: projects
 --- 

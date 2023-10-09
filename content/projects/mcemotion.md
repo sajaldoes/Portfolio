@@ -5,7 +5,7 @@ dateString: May 2021 - August 2021
 draft: false
 tags: ["Python", "ML", "OpenCV", "Data", "Bangla"]
 showtoc: false
-weight: 304
+weight: 394
 cover:
 category: projects
 --- 
