@@ -17,7 +17,7 @@ This is an End-To-End Data Engineering Project on Real-Time Stock Market Data us
 I have used different technologies such as Python, Amazon Web Services (AWS), Apache Kafka, Glue, Athena, and SQL.
 
 ## Architecture 
-<img src="Architecture.jpg">
+![](/projects/kafka_stock_market/Architecture.jpg)
 
 ## Technology Used
 - Programming Language - Python
