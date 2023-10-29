@@ -5,9 +5,9 @@ dateString: September 2023 - September 2023
 draft: false
 tags: ["Kafka", "Amazon Web Services (AWS)", "Python"]
 showtoc: false
-weight: 390
+weight: 395
 cover: 
-category: 
+category: projects
 --- 
 👩‍💻 [**Source Code**](https://github.com/sajaldoes/stock_market_kafka) 
 
