@@ -7,7 +7,7 @@ tags: ["Kafka", "Amazon Web Services (AWS)", "Python"]
 showtoc: false
 weight: 390
 cover: 
-category: projects
+category: 
 --- 
 👩‍💻 [**Source Code**](https://github.com/sajaldoes/stock_market_kafka) 
 
