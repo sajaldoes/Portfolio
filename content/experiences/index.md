@@ -9,9 +9,12 @@ showtoc: false
 draft: false
 ---
 
+**Associate Data Analyst**,  [**TallyKhata**](https://www.tallykhata.com/)
+[Dec 2023 - Present]  
 
-**Junior Data Analyst**,  [**Apon Bazaar**](https://www.aponbazaar.co/)
-[May 2023 - Present]  
+
+**Jr. Data Analyst**,  [**Apon Bazaar**](https://www.aponbazaar.co/)
+[May 2023 - Nov 2023]  
 -  Leveraged cutting-edge BI tools to drive data-driven offer promotions, delivering a
 remarkable 120% increase in profits.
 - Employed state-of-the-art machine learning techniques for sales forecasting, achieving
