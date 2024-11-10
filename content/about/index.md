@@ -11,7 +11,7 @@ draft: false
 
 Hello! 👋
 
-I presently work as a data analyst and have an engineering and computer science degree from Daffodil International University. My expertise is **Python programming** in Machine Learning, Deep Learning, Data anlytics & visualization and other aspects. My competencies include **fast learning**, **adaptive software development**, and **strong problem-solving skills**. I enjoy working in groups and communicating effectively with my stakeholders and teammates. My hobby is exploring new things about technology.
+I presently work as a Data Engineer and have an engineering and computer science degree from Daffodil International University. My expertise is **Python programming** in Machine Learning, Deep Learning, Data anlytics & visualization and other aspects. My competencies include **fast learning**, **adaptive software development**, and **strong problem-solving skills**. I enjoy working in groups and communicating effectively with my stakeholders and teammates. My hobby is exploring new things about technology.
 
 ## Education
 

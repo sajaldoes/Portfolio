@@ -9,7 +9,7 @@ showtoc: false
 draft: false
 ---
 
-**Data Engineer**,  Progoti Systems Ltd. ([**TallyKhata**](https://www.tallykhata.com/))
+**Data Engineer**, **Progoti Systems Ltd. ([TallyKhata](https://www.tallykhata.com/))**
 [Jun 2023 - Present]
 - Built and optimized ELT pipelines integrating data from Google Sheets, Excel, CSV, MongoDB, and MySQL into PostgreSQL, ensuring data integrity and efficiency.
 - Led DB and cloud migrations, maintaining star-schema data models and performing data validation to ensure smooth transitions.
@@ -18,14 +18,14 @@ draft: false
 - Set up automated email alerts for auditing DWH table creation and permissions, and transactional KPIs.
 
 
-**Associate Data Analyst**,  Progoti Systems Ltd. ([**TallyKhata**](https://www.tallykhata.com/))
+**Associate Data Analyst**, **Progoti Systems Ltd. ([TallyKhata](https://www.tallykhata.com/))**
 [Dec 2023 - May 2024]
 - Created dynamic dashboards for TallyPay that facilitate data-driven executive decision-making and offer real-time KPI analysis.
 - To improve focused marketing strategies, user segmentation models were developed and put into practice, dividing customers into Platinum, Gold, Silver, and Bronze categories based on their transactional patterns.
 - Developed fraud detection algorithms that use a variety of criteria to validate transaction data that seems suspect.
 
 
-**Jr. Data Analyst**,  AponTech Ltd. ([**Apon Bazaar**](https://www.aponbazaar.co/))
+**Jr. Data Analyst**, **AponTech Ltd. ([Apon Bazaar](https://www.aponbazaar.co/))**
 [May 2023 - Nov 2023]  
 -  Leveraged cutting-edge BI tools to drive data-driven offer promotions, delivering a
 remarkable 120% increase in profits.
