@@ -59,7 +59,7 @@ params:
   profileMode:
     enabled: ture
     title: "Sajal Das"
-    subtitle: "I am an aspiring **researcher** on **Computer Vision, NLP, ML** from Bangladesh. \U0001f1e7\U0001f1e9 <br>
+    subtitle: "I am an explorer, problem solver, and programmer with a passion for data-driven technologies. <br>
     Enthusiast of *Data Science*, *Artificial Inteligence*, *Machine Learning*."
     imageUrl: "images/dp.png"
     imageWidth: 220
