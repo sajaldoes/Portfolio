@@ -59,7 +59,7 @@ params:
   profileMode:
     enabled: ture
     title: "Sajal Das"
-    subtitle: "I am an explorer, problem solver, and programmer with a passion for data-driven technologies. <br>
+    subtitle: "I am an **explorer, problem solver, and programmer** with a passion for **data-driven** technologies. <br>
     Enthusiast of *Data Science*, *Artificial Inteligence*, *Machine Learning*."
     imageUrl: "images/dp.png"
     imageWidth: 220
