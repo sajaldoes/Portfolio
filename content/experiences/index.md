@@ -9,8 +9,12 @@ showtoc: false
 draft: false
 ---
 
+**Data Engineer I**, [**Optimizely Inc.**](https://www.optimizely.com/)
+[May 2025 - Present]
+
+
 **Data Engineer**, **Progoti Systems Ltd. ([TallyKhata](https://www.tallykhata.com/))**
-[Jun 2023 - Present]
+[Jun 2024 - Apr 2025]
 - Built and optimized ELT pipelines integrating data from Google Sheets, Excel, CSV, MongoDB, and MySQL into PostgreSQL, ensuring data integrity and efficiency.
 - Led DB and cloud migrations, maintaining star-schema data models and performing data validation to ensure smooth transitions.
 - Automated DWH data archival to AWS S3/Glacier, creating monthly deep storage processes to reduce costs.
