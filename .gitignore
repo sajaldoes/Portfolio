@@ -1,0 +1,24 @@
+# Hugo build artifacts
+/public/
+/resources/
+/.hugo_build.lock
+
+# Local development
+.DS_Store
+.vscode/
+.idea/
+
+# Node modules (if using npm for asset processing)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+
+# Temporary files
+.tmp/
+*.tmp
+*.temp
+
+# OS generated files
+Thumbs.db

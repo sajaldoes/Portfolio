@@ -1,0 +1,89 @@
+{{- define "main" }}
+<div class="hero" role="banner">
+    <div class="container">
+        {{- if site.Params.profileMode.enabled }}
+        <div class="profile">
+            <div class="profile-image">
+                {{- with site.Params.profileMode.imageUrl }}
+                <img src="{{ . | absURL }}" 
+                     alt="{{ site.Params.profileMode.imageTitle | default site.Title }}"
+                     class="profile-img"
+                     width="{{ site.Params.profileMode.imageWidth | default 150 }}"
+                     height="{{ site.Params.profileMode.imageHeight | default 150 }}">
+                {{- end }}
+            </div>
+            <div class="profile-content">
+                <h1 class="profile-title">{{ site.Params.profileMode.title | default site.Title }}</h1>
+                {{- with site.Params.profileMode.subtitle }}
+                <div class="profile-subtitle">{{ . | markdownify }}</div>
+                {{- end }}
+                
+                {{- if site.Params.profileMode.buttons }}
+                <div class="profile-buttons">
+                    {{- range site.Params.profileMode.buttons }}
+                    <a href="{{ .url | absURL }}" 
+                       class="btn btn--primary" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        {{ .name }}
+                    </a>
+                    {{- end }}
+                </div>
+                {{- end }}
+            </div>
+        </div>
+        {{- else }}
+        <div class="hero-content">
+            <h1 class="hero-title">{{ site.Title }}</h1>
+            {{- with site.Params.description }}
+            <p class="hero-description">{{ . }}</p>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+</div>
+
+{{- if site.Params.showRecentPosts | default true }}
+<section class="recent-posts" aria-labelledby="recent-posts-heading">
+    <div class="container">
+        <h2 id="recent-posts-heading" class="section-title">Recent Work</h2>
+        <div class="posts-grid">
+            {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+            {{- range first 6 $pages }}
+            <article class="post-card">
+                {{- if .Params.cover }}
+                <div class="post-card-image">
+                    <img src="{{ .Params.cover | absURL }}" alt="{{ .Title }}" class="post-image">
+                </div>
+                {{- end }}
+                <div class="post-card-content">
+                    <h3 class="post-card-title">
+                        <a href="{{ .Permalink }}" class="post-card-link">{{ .Title }}</a>
+                    </h3>
+                    {{- if .Summary }}
+                    <p class="post-card-summary">{{ .Summary | truncate 150 }}</p>
+                    {{- end }}
+                    <div class="post-card-meta">
+                        <time datetime="{{ .Date.Format `2006-01-02` }}" class="post-date">
+                            {{ .Date.Format "January 2, 2006" }}
+                        </time>
+                        {{- if .Params.tags }}
+                        <div class="post-tags">
+                            {{- range first 3 .Params.tags }}
+                            <span class="post-tag">{{ . }}</span>
+                            {{- end }}
+                        </div>
+                        {{- end }}
+                    </div>
+                </div>
+            </article>
+            {{- end }}
+        </div>
+        
+        <div class="section-footer">
+            <a href="{{ `projects` | absURL }}" class="btn btn--outline">View All Projects</a>
+        </div>
+    </div>
+</section>
+{{- end }}
+{{- end }}

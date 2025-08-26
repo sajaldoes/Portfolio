@@ -1,0 +1,108 @@
+{{- define "main" }}
+<article class="single" role="main">
+    <header class="single-header">
+        <div class="container">
+            <h1 class="single-title">{{ .Title }}</h1>
+            
+            {{- if not .Date.IsZero }}
+            <div class="single-meta">
+                <time datetime="{{ .Date.Format `2006-01-02` }}" class="single-date">
+                    {{ .Date.Format "January 2, 2006" }}
+                </time>
+                
+                {{- if .Params.readingTime | default true }}
+                <span class="single-reading-time" aria-label="Estimated reading time">
+                    {{ .ReadingTime }} min read
+                </span>
+                {{- end }}
+                
+                {{- if .Params.tags }}
+                <div class="single-tags">
+                    {{- range .Params.tags }}
+                    <a href="{{ `/tags/` | relURL }}{{ . | urlize }}" class="single-tag">{{ . }}</a>
+                    {{- end }}
+                </div>
+                {{- end }}
+            </div>
+            {{- end }}
+            
+            {{- if .Params.cover }}
+            <div class="single-cover">
+                <img src="{{ .Params.cover | absURL }}" 
+                     alt="{{ .Params.coverAlt | default .Title }}" 
+                     class="single-cover-img">
+                {{- if .Params.coverCaption }}
+                <figcaption class="single-cover-caption">{{ .Params.coverCaption | markdownify }}</figcaption>
+                {{- end }}
+            </div>
+            {{- end }}
+        </div>
+    </header>
+    
+    <div class="single-content">
+        <div class="container">
+            {{- if .Params.toc | default false }}
+            <aside class="toc" role="complementary" aria-labelledby="toc-heading">
+                <h2 id="toc-heading" class="toc-title">Table of Contents</h2>
+                {{ .TableOfContents }}
+            </aside>
+            {{- end }}
+            
+            <div class="content" role="main">
+                {{ .Content }}
+            </div>
+            
+            {{- if .Params.showAuthor | default true }}
+            <footer class="single-footer">
+                <div class="author-info">
+                    <h3 class="author-title">About {{ site.Params.author | default site.Title }}</h3>
+                    {{- if site.Params.authorBio }}
+                    <p class="author-bio">{{ site.Params.authorBio }}</p>
+                    {{- end }}
+                    
+                    {{- if site.Params.socialIcons }}
+                    <div class="author-social">
+                        {{- range first 4 site.Params.socialIcons }}
+                        <a href="{{ .url }}" 
+                           class="author-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="{{ .name }}">
+                            {{ .name }}
+                        </a>
+                        {{- end }}
+                    </div>
+                    {{- end }}
+                </div>
+            </footer>
+            {{- end }}
+        </div>
+    </div>
+    
+    {{- if site.Params.showPostNavLinks | default true }}
+    <nav class="post-nav" role="navigation" aria-label="Posts navigation">
+        <div class="container">
+            <div class="post-nav-links">
+                {{- with .NextInSection }}
+                <div class="post-nav-prev">
+                    <a href="{{ .Permalink }}" class="post-nav-link" rel="prev">
+                        <span class="post-nav-direction">← Previous</span>
+                        <span class="post-nav-title">{{ .Title }}</span>
+                    </a>
+                </div>
+                {{- end }}
+                
+                {{- with .PrevInSection }}
+                <div class="post-nav-next">
+                    <a href="{{ .Permalink }}" class="post-nav-link" rel="next">
+                        <span class="post-nav-direction">Next →</span>
+                        <span class="post-nav-title">{{ .Title }}</span>
+                    </a>
+                </div>
+                {{- end }}
+            </div>
+        </div>
+    </nav>
+    {{- end }}
+</article>
+{{- end }}

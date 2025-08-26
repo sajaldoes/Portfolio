@@ -1,0 +1,199 @@
+{{- define "main" }}
+<div class="list-page">
+    <header class="list-header">
+        <div class="container">
+            <h1 class="list-title">{{ .Title }}</h1>
+            {{- if .Description }}
+            <div class="list-description">
+                {{ .Description | markdownify }}
+            </div>
+            {{- end }}
+            
+            {{- if .Params.intro }}
+            <div class="list-intro">
+                {{ .Params.intro | markdownify }}
+            </div>
+            {{- end }}
+        </div>
+    </header>
+    
+    <main class="list-content">
+        <div class="container">
+            {{- if .Content }}
+            <div class="list-page-content">
+                {{ .Content }}
+            </div>
+            {{- end }}
+            
+            {{- $pages := .Pages }}
+            {{- if .IsHome }}
+                {{- $pages = where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+            {{- end }}
+            
+            {{- if $pages }}
+            <div class="posts-container">
+                {{- if eq .Section "projects" }}
+                <div class="projects-grid">
+                    {{- range $pages }}
+                    <article class="project-card">
+                        {{- if .Params.image }}
+                        <div class="project-image">
+                            <img src="{{ .Params.image | absURL }}" 
+                                 alt="{{ .Title }}" 
+                                 class="project-img"
+                                 loading="lazy">
+                        </div>
+                        {{- end }}
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                <a href="{{ .Permalink }}" class="project-link">{{ .Title }}</a>
+                            </h3>
+                            
+                            {{- if .Summary }}
+                            <p class="project-summary">{{ .Summary | truncate 120 }}</p>
+                            {{- end }}
+                            
+                            <div class="project-meta">
+                                {{- if .Params.technologies }}
+                                <div class="project-tech">
+                                    {{- range .Params.technologies }}
+                                    <span class="tech-tag">{{ . }}</span>
+                                    {{- end }}
+                                </div>
+                                {{- end }}
+                                
+                                {{- if .Date }}
+                                <time datetime="{{ .Date.Format `2006-01-02` }}" class="project-date">
+                                    {{ .Date.Format "2006" }}
+                                </time>
+                                {{- end }}
+                            </div>
+                            
+                            {{- if or .Params.demo_url .Params.source_url }}
+                            <div class="project-links">
+                                {{- with .Params.demo_url }}
+                                <a href="{{ . }}" 
+                                   class="project-link-btn project-link-btn--demo" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    Demo
+                                </a>
+                                {{- end }}
+                                {{- with .Params.source_url }}
+                                <a href="{{ . }}" 
+                                   class="project-link-btn project-link-btn--source" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    Source
+                                </a>
+                                {{- end }}
+                            </div>
+                            {{- end }}
+                        </div>
+                    </article>
+                    {{- end }}
+                </div>
+                
+                {{- else if eq .Section "publications" }}
+                <div class="publications-list">
+                    {{- range $pages }}
+                    <article class="publication-item">
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                {{- if .Params.url }}
+                                <a href="{{ .Params.url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+                                {{- else }}
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                {{- end }}
+                            </h3>
+                            
+                            {{- if .Params.authors }}
+                            <div class="publication-authors">
+                                {{ delimit .Params.authors ", " }}
+                            </div>
+                            {{- end }}
+                            
+                            {{- if .Params.journal }}
+                            <div class="publication-venue">
+                                <em>{{ .Params.journal }}</em>
+                                {{- if .Params.year }}, {{ .Params.year }}{{- end }}
+                            </div>
+                            {{- end }}
+                            
+                            {{- if .Summary }}
+                            <p class="publication-summary">{{ .Summary }}</p>
+                            {{- end }}
+                            
+                            {{- if or .Params.pdf_url .Params.doi }}
+                            <div class="publication-links">
+                                {{- with .Params.pdf_url }}
+                                <a href="{{ . }}" class="publication-link" target="_blank" rel="noopener noreferrer">PDF</a>
+                                {{- end }}
+                                {{- with .Params.doi }}
+                                <a href="https://doi.org/{{ . }}" class="publication-link" target="_blank" rel="noopener noreferrer">DOI</a>
+                                {{- end }}
+                            </div>
+                            {{- end }}
+                        </div>
+                    </article>
+                    {{- end }}
+                </div>
+                
+                {{- else }}
+                <!-- Default list layout -->
+                <div class="posts-list">
+                    {{- range $pages }}
+                    <article class="post-item">
+                        {{- if .Params.cover }}
+                        <div class="post-item-image">
+                            <a href="{{ .Permalink }}">
+                                <img src="{{ .Params.cover | absURL }}" 
+                                     alt="{{ .Title }}" 
+                                     class="post-item-img"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        {{- end }}
+                        
+                        <div class="post-item-content">
+                            <h3 class="post-item-title">
+                                <a href="{{ .Permalink }}" class="post-item-link">{{ .Title }}</a>
+                            </h3>
+                            
+                            {{- if .Summary }}
+                            <p class="post-item-summary">{{ .Summary | truncate 200 }}</p>
+                            {{- end }}
+                            
+                            <div class="post-item-meta">
+                                {{- if not .Date.IsZero }}
+                                <time datetime="{{ .Date.Format `2006-01-02` }}" class="post-item-date">
+                                    {{ .Date.Format "January 2, 2006" }}
+                                </time>
+                                {{- end }}
+                                
+                                {{- if .Params.tags }}
+                                <div class="post-item-tags">
+                                    {{- range first 3 .Params.tags }}
+                                    <span class="post-item-tag">{{ . }}</span>
+                                    {{- end }}
+                                </div>
+                                {{- end }}
+                            </div>
+                        </div>
+                    </article>
+                    {{- end }}
+                </div>
+                {{- end }}
+                
+                {{- template "_internal/pagination.html" . }}
+            </div>
+            {{- else }}
+            <div class="empty-state">
+                <p>No content found.</p>
+            </div>
+            {{- end }}
+        </div>
+    </main>
+</div>
+{{- end }}

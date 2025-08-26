@@ -1,0 +1,67 @@
+<header class="header" role="banner">
+    <div class="container">
+        <nav class="nav" role="navigation" aria-label="main navigation">
+            <div class="nav-brand">
+                <a href="{{ site.BaseURL | relURL }}" class="nav-brand-link" aria-label="Go to homepage">
+                    {{- if site.Params.label.icon -}}
+                    <img src="{{ site.Params.label.icon | absURL }}" alt="{{ site.Params.label.text | default site.Title }}" class="nav-brand-icon">
+                    {{- end -}}
+                    <span class="nav-brand-text">{{ site.Params.label.text | default site.Title }}</span>
+                </a>
+            </div>
+            
+            <button 
+                class="nav-toggle" 
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                data-nav-toggle
+            >
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            
+            <div class="nav-menu" data-nav-menu>
+                <ul class="nav-list" role="list">
+                    {{- $currentPage := . -}}
+                    {{- range site.Menus.main -}}
+                    <li class="nav-item">
+                        <a href="{{ .URL | absURL }}" 
+                           class="nav-link{{ if or (eq $currentPage.RelPermalink .URL) (eq $currentPage.Section .Identifier) }} nav-link--active{{ end }}"
+                           {{- if .Pre }} 
+                           aria-label="{{ .Name }}"
+                           {{- end }}>
+                            {{- .Pre -}}
+                            {{ .Name }}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    
+                    <!-- Dark mode toggle -->
+                    <li class="nav-item nav-item--theme">
+                        <button 
+                            class="theme-toggle" 
+                            aria-label="Toggle dark mode"
+                            data-theme-toggle
+                        >
+                            <svg class="theme-icon theme-icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="12" cy="12" r="5"/>
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="theme-icon theme-icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

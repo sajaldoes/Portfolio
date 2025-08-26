@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{- site.LanguageCode | default `en` -}}" dir="{{- .Language.LanguageDirection | default `ltr` -}}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="{{- if site.Params.defaultTheme }}theme-{{ site.Params.defaultTheme }}{{- end -}}">
+    {{- partial "header.html" . -}}
+    
+    <main class="main">
+        {{- block "main" . }}{{- end }}
+    </main>
+    
+    {{- partial "footer.html" . -}}
+    
+    <script>
+        // Dark mode toggle functionality
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    
+    {{- $script := resources.Get "js/main.js" -}}
+    {{- if $script -}}
+    {{- $script = $script | js.Build | minify | fingerprint -}}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+    {{- end -}}
+</body>
+</html>

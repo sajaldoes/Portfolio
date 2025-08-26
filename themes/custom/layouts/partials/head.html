@@ -1,0 +1,71 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{- $title := (.Title) -}}
+{{- if .IsHome }}{{ $title = site.Title }}{{ end -}}
+{{- if site.Params.titleSeparator }}{{ $title = printf "%s %s %s" .Title site.Params.titleSeparator site.Title }}{{ end -}}
+<title>{{ $title }}</title>
+
+<meta name="description" content="{{- .Description | default site.Params.description -}}">
+<meta name="keywords" content="{{- delimit site.Params.keywords `,` -}}">
+<meta name="author" content="{{- site.Params.author | default site.Title -}}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{- .Description | default site.Params.description -}}">
+{{- with site.Params.images -}}
+<meta property="og:image" content="{{ index . 0 | absURL }}">
+{{- end -}}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ $title }}">
+<meta property="twitter:description" content="{{- .Description | default site.Params.description -}}">
+{{- with site.Params.images -}}
+<meta property="twitter:image" content="{{ index . 0 | absURL }}">
+{{- end -}}
+
+<!-- Favicon -->
+{{- with site.Params.assets.favicon -}}
+<link rel="icon" href="{{ . | absURL }}">
+{{- end -}}
+{{- with site.Params.assets.favicon16x16 -}}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ . | absURL }}">
+{{- end -}}
+{{- with site.Params.assets.favicon32x32 -}}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ . | absURL }}">
+{{- end -}}
+{{- with site.Params.assets.apple_touch_icon -}}
+<link rel="apple-touch-icon" href="{{ . | absURL }}">
+{{- end -}}
+
+<!-- CSS -->
+{{- $styles := resources.Get "scss/main.scss" -}}
+{{- if $styles -}}
+{{- $styles = $styles | toCSS | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
+{{- end -}}
+
+<!-- Preconnect to improve performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Font loading -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- RSS Feed -->
+{{- with .OutputFormats.Get "rss" -}}
+{{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{- end -}}
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Robots meta tag -->
+{{- if .Params.noindex -}}
+<meta name="robots" content="noindex">
+{{- end -}}

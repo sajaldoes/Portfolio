@@ -1,0 +1,12 @@
+name = "Custom Academic Theme"
+description = "A modern, professional Hugo theme for academic portfolios"
+homepage = "https://github.com/sajaldoes/Portfolio"
+tags = ["academic", "portfolio", "responsive", "dark-mode", "accessibility"]
+min_version = "0.100.0"
+
+[features]
+responsive = true
+dark_mode = true
+academic = true
+accessible = true
+seo_optimized = true

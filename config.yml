@@ -1,7 +1,7 @@
 baseURL: "https://sajaldoes.netlify.app"
 title: Sajal Das
 paginate: 5
-theme: PaperMod
+theme: custom
 
 enableRobotsTXT: true
 buildDrafts: false
