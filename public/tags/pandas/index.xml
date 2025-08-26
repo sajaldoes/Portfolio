@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pandas on Sajal Das</title>
+    <link>https://sajaldoes.netlify.app/tags/pandas/</link>
+    <description>Recent content in Pandas on Sajal Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://sajaldoes.netlify.app/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>London Bike Rides - Moving Average and Heatmap</title>
+      <link>https://sajaldoes.netlify.app/projects/data_viz_london/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/data_viz_london/</guid>
+      <description>🔗 Visualize in Tableau 👩‍💻 Source Code
+Description End to end data analyst project from gathering data programatically using the Kaggle API, through data exploration, assessment and manipulation using the pandas library in Python, to data visualization in Tableau.
+Data Acquisition The data collected from kaggle London bike sharing dataset.
+Data Preparation Data downloaded programatically through API of kaggle using python. Data manipulation used for - specifying new column name making humidity percent value mapping weather and season name casting data types Saving the final data in excel format.</description>
+    </item>
+    
+    <item>
+      <title>Applied Data Science Lab</title>
+      <link>https://sajaldoes.netlify.app/projects/adslab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/adslab/</guid>
+      <description>🔗 Certification
+Description It took nearly 5 months to complete 8 data science projects. From the first project to the last, I learned about various aspects and tools of data science. Furthermore, I&amp;rsquo;ve experimented with several components of the project locally for my own enjoyment.
+This covers:
+✅ Exploratory Data Analysis
+✅ Data Wrangling
+✅ Data Visualization
+✅ Work with Imbalanced data using resampling
+✅ Python OOP
+✅ MongoDB
+✅ SQL</description>
+    </item>
+    
+    <item>
+      <title>Multi-class Fish Classification</title>
+      <link>https://sajaldoes.netlify.app/projects/fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/fish/</guid>
+      <description>👩‍💻 Source Code
+Description Convolutional Neural Network (CNN) was used to classify 12 distinct fish species, and core data augmentation significantly improved model performance.
+Datasets Local Fish: 269 images Catla = 18, Cyprinus carpio = 50, Grass carp = 11, Mori = 70, Rohu = 73, Silver = 47
+Shah, Syed Zakir Hussain ; Rauf, Hafiz Tayyab; lali, IkramUllah; Bukhari, Syed Ahmad Chan; Khalid, Malik Shahzaib; Farooq, Muhammad ; Fatima, Mahroze (2019), “Fish-Pak: Fish Species Dataset from Pakistan for Visual Features Based Classification”, Mendeley Data, V3, doi: 10.</description>
+    </item>
+    
+  </channel>
+</rss>

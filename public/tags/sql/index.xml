@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SQL on Sajal Das</title>
+    <link>https://sajaldoes.netlify.app/tags/sql/</link>
+    <description>Recent content in SQL on Sajal Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://sajaldoes.netlify.app/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Applied Data Science Lab</title>
+      <link>https://sajaldoes.netlify.app/projects/adslab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/adslab/</guid>
+      <description>🔗 Certification
+Description It took nearly 5 months to complete 8 data science projects. From the first project to the last, I learned about various aspects and tools of data science. Furthermore, I&amp;rsquo;ve experimented with several components of the project locally for my own enjoyment.
+This covers:
+✅ Exploratory Data Analysis
+✅ Data Wrangling
+✅ Data Visualization
+✅ Work with Imbalanced data using resampling
+✅ Python OOP
+✅ MongoDB
+✅ SQL</description>
+    </item>
+    
+    <item>
+      <title>Academic Point</title>
+      <link>https://sajaldoes.netlify.app/projects/acpoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/acpoint/</guid>
+      <description>👩‍💻 Source Code
+This project is about Student Information System using Python and here we have chosen SQLite for storing information in a SQL database. In this console application, there are three section which is Student Panel, Teacher Panel and Admin Panel. Here we focused on our SQL database.</description>
+    </item>
+    
+    <item>
+      <title>VRant WebApp </title>
+      <link>https://sajaldoes.netlify.app/projects/vrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/vrant/</guid>
+      <description>👩‍💻 Source Code
+Description An online based home-made food ordering system. The webapp is built with raw PHP, HTML, CSS, and JavaScript.</description>
+    </item>
+    
+  </channel>
+</rss>

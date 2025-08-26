@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Streamlit on Sajal Das</title>
+    <link>https://sajaldoes.netlify.app/tags/streamlit/</link>
+    <description>Recent content in Streamlit on Sajal Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://sajaldoes.netlify.app/tags/streamlit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Housing Price Prediction App</title>
+      <link>https://sajaldoes.netlify.app/projects/house/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/house/</guid>
+      <description>👩‍💻 Source Code
+This app predicts the Boston House Price!
+App Fetures: Takes input from user Predict the price with Machine Learning Algorithm (Random Forest Regressor) Shows Feature importance based on SHAP values WebApp Overview
+Feature Importance</description>
+    </item>
+    
+  </channel>
+</rss>

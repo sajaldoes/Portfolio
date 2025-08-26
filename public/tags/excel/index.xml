@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Excel on Sajal Das</title>
+    <link>https://sajaldoes.netlify.app/tags/excel/</link>
+    <description>Recent content in Excel on Sajal Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://sajaldoes.netlify.app/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>London Bike Rides - Moving Average and Heatmap</title>
+      <link>https://sajaldoes.netlify.app/projects/data_viz_london/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/data_viz_london/</guid>
+      <description>🔗 Visualize in Tableau 👩‍💻 Source Code
+Description End to end data analyst project from gathering data programatically using the Kaggle API, through data exploration, assessment and manipulation using the pandas library in Python, to data visualization in Tableau.
+Data Acquisition The data collected from kaggle London bike sharing dataset.
+Data Preparation Data downloaded programatically through API of kaggle using python. Data manipulation used for - specifying new column name making humidity percent value mapping weather and season name casting data types Saving the final data in excel format.</description>
+    </item>
+    
+  </channel>
+</rss>

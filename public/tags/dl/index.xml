@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DL on Sajal Das</title>
+    <link>https://sajaldoes.netlify.app/tags/dl/</link>
+    <description>Recent content in DL on Sajal Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://sajaldoes.netlify.app/tags/dl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-class Fish Classification</title>
+      <link>https://sajaldoes.netlify.app/projects/fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sajaldoes.netlify.app/projects/fish/</guid>
+      <description>👩‍💻 Source Code
+Description Convolutional Neural Network (CNN) was used to classify 12 distinct fish species, and core data augmentation significantly improved model performance.
+Datasets Local Fish: 269 images Catla = 18, Cyprinus carpio = 50, Grass carp = 11, Mori = 70, Rohu = 73, Silver = 47
+Shah, Syed Zakir Hussain ; Rauf, Hafiz Tayyab; lali, IkramUllah; Bukhari, Syed Ahmad Chan; Khalid, Malik Shahzaib; Farooq, Muhammad ; Fatima, Mahroze (2019), “Fish-Pak: Fish Species Dataset from Pakistan for Visual Features Based Classification”, Mendeley Data, V3, doi: 10.</description>
+    </item>
+    
+  </channel>
+</rss>
